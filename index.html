@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rajesh Kannan | Senior Software Engineer (Angular · Node.js · AWS)</title>
+  <meta name="description" content="Portfolio of Rajesh Kannan, Senior Software Engineer specializing in Angular (v12-17+), Node.js, AWS, and TypeScript. Shipped 10+ enterprise network portals serving 500+ global clients.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome / Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="logo">
+        <span class="logo-accent">&lt;</span>RK<span class="logo-accent">/&gt;</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-cta">
+        <a href="#contact" class="btn btn-outline"><i class="fa-solid fa-file-arrow-down"></i> Resume</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="hero-bg-glow"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="badge-status">
+          <span class="pulse-dot"></span> Senior Software Engineer @ Tata Communications
+        </div>
+        <h1 class="hero-title">
+          Architecting High-Performance <span class="gradient-text">Enterprise Portals</span> & Cloud Services
+        </h1>
+        <p class="hero-subtitle">
+          Specializing in <strong>Angular (v12-17+)</strong>, <strong>RxJS</strong>, <strong>Node.js</strong>, and <strong>AWS</strong>. Delivering scalable SDN controllers, real-time telemetry dashboards, and multi-cloud management platforms for 500+ global enterprise clients.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> Explore Case Studies</a>
+          <a href="#contact" class="btn btn-secondary"><i class="fa-solid fa-envelope"></i> Get In Touch</a>
+        </div>
+        
+        <!-- Metrics Banner -->
+        <div class="hero-metrics">
+          <div class="metric-card">
+            <span class="metric-number" data-target="10">10+</span>
+            <span class="metric-label">Enterprise Portals Shipped</span>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-card">
+            <span class="metric-number" data-target="500">500+</span>
+            <span class="metric-label">Global Enterprise Clients</span>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-card">
+            <span class="metric-number" data-target="25">25%</span>
+            <span class="metric-label">Initial Load Time Cut</span>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-card">
+            <span class="metric-number" data-target="40">40%</span>
+            <span class="metric-label">Provisioning Effort Reduced</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">ENGINEERING PHILOSOPHY</span>
+        <h2 class="section-title">Driven by Sub-Second Performance & Robust Architecture</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text-card glass-panel">
+          <h3>Professional Profile</h3>
+          <p>
+            With 4+ years of hands-on experience in telecom and cloud software engineering, I specialize in building mission-critical frontend systems and resilient microservices. My engineering approach combines strict state management via <strong>RxJS & NgRx</strong>, sub-60fps rendering with <strong>Angular OnPush CD & Virtual Scrolling</strong>, and automated cloud workflows using <strong>Node.js, AWS (EC2/S3), and Docker</strong>.
+          </p>
+          <div class="philosophy-bullets">
+            <div class="bullet-item">
+              <i class="fa-solid fa-bolt bullet-icon"></i>
+              <div>
+                <strong>Performance Engineering:</strong> Optimized 10+ production Angular apps using lazy-loaded routes, TrackBy, and Signals.
+              </div>
+            </div>
+            <div class="bullet-item">
+              <i class="fa-solid fa-network-wired bullet-icon"></i>
+              <div>
+                <strong>Cloud & Microservices:</strong> Seamless API gateways (APISIX), JWT/Keycloak SSO, and AWS backend integration.
+              </div>
+            </div>
+            <div class="bullet-item">
+              <i class="fa-solid fa-users-gear bullet-icon"></i>
+              <div>
+                <strong>Agile Leadership:</strong> Led sprint planning, Daily Scrum, and code reviews for teams of 6+ engineers in JIRA.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-quick-specs glass-panel">
+          <h3>Technical Footprint</h3>
+          <ul class="spec-list">
+            <li><span>Location:</span> <strong>Chennai, India</strong></li>
+            <li><span>Current Role:</span> <strong>Senior Software Engineer @ Tata Communications</strong></li>
+            <li><span>Core Stack:</span> <strong>Angular (v12-17+), TypeScript, RxJS, Node.js, AWS</strong></li>
+            <li><span>Education:</span> <strong>MCA (Master of Computer Applications)</strong></li>
+            <li><span>CI/CD Pipeline:</span> <strong>GitLab CI/CD, Keycloak, APISIX, Docker</strong></li>
+            <li><span>Upskilling Target:</span> <strong>Angular Signals, Micro-Frontend (Module Federation), AWS Solutions Architect</strong></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Showcase Section -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">ENTERPRISE CASE STUDIES</span>
+        <h2 class="section-title">Mission-Critical Projects & Impact</h2>
+        <p class="section-subtitle">Detailed breakdown of key platforms delivered for Tata Communications network infrastructure</p>
+      </div>
+
+      <div class="projects-grid">
+        
+        <!-- Project 1 -->
+        <div class="project-card glass-panel" data-project="sdn">
+          <div class="project-header">
+            <div class="project-badge">SDN CONTROLLER</div>
+            <span class="project-impact"><i class="fa-solid fa-chart-line"></i> -40% Provisioning Time</span>
+          </div>
+          <h3 class="project-title">Ethernet SR-EVPN SDN Controller</h3>
+          <p class="project-desc">
+            Automated end-to-end circuit turn-up and path computation across enterprise SD-WAN networks using Angular & Node.js provisioning APIs.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Angular 16+</span>
+            <span class="tag">RxJS</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">SD-WAN</span>
+            <span class="tag">REST APIs</span>
+          </div>
+          <button class="btn btn-card-link open-modal" data-modal="modal-sdn">
+            View Case Study <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card glass-panel" data-project="mcn">
+          <div class="project-header">
+            <div class="project-badge">CLOUD OVERVIEW</div>
+            <span class="project-impact"><i class="fa-solid fa-chart-line"></i> -30% Manual Intervention</span>
+          </div>
+          <h3 class="project-title">IZO Multi-Cloud Network (MCN)</h3>
+          <p class="project-desc">
+            Single-pane visibility portal for enterprise multi-cloud connections across AWS (EC2, S3) with reactive forms and live telemetry.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Angular</span>
+            <span class="tag">AWS (EC2/S3)</span>
+            <span class="tag">Keycloak SSO</span>
+            <span class="tag">APISIX</span>
+            <span class="tag">Docker</span>
+          </div>
+          <button class="btn btn-card-link open-modal" data-modal="modal-mcn">
+            View Case Study <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card glass-panel" data-project="maas">
+          <div class="project-header">
+            <div class="project-badge">REAL-TIME DASHBOARD</div>
+            <span class="project-impact"><i class="fa-solid fa-bolt"></i> Low MTTD Alerts</span>
+          </div>
+          <h3 class="project-title">Monitoring as a Service (MaaS)</h3>
+          <p class="project-desc">
+            Real-time infrastructure health dashboards with OnPush change detection, Zabbix integration, and virtual scrolling for 10,000+ devices.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Angular Signals</span>
+            <span class="tag">OnPush CD</span>
+            <span class="tag">Virtual Scrolling</span>
+            <span class="tag">Zabbix API</span>
+          </div>
+          <button class="btn btn-card-link open-modal" data-modal="modal-maas">
+            View Case Study <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card glass-panel" data-project="bod">
+          <div class="project-header">
+            <div class="project-badge">SELF-SERVICE</div>
+            <span class="project-impact"><i class="fa-solid fa-clock"></i> Instant Bandwidth Scaling</span>
+          </div>
+          <h3 class="project-title">ILL Bandwidth on Demand (BOD)</h3>
+          <p class="project-desc">
+            Dynamic bandwidth scaling UI for enterprise leased lines backed by Python and Node.js workflows without manual ticketing.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Angular</span>
+            <span class="tag">Python</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">PostgreSQL</span>
+          </div>
+          <button class="btn btn-card-link open-modal" data-modal="modal-bod">
+            View Case Study <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Radar Section -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">TECHNICAL SKILLS</span>
+        <h2 class="section-title">Core Competencies & Stack</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-category glass-panel">
+          <div class="skill-cat-header">
+            <i class="fa-brands fa-angular skill-icon"></i>
+            <h3>Frontend Architecture</h3>
+          </div>
+          <ul class="skill-list">
+            <li><span>Angular (v12-17+)</span> <div class="progress-bar"><div class="fill" style="width: 95%"></div></div></li>
+            <li><span>TypeScript / ES6+</span> <div class="progress-bar"><div class="fill" style="width: 90%"></div></div></li>
+            <li><span>RxJS & Observables</span> <div class="progress-bar"><div class="fill" style="width: 92%"></div></div></li>
+            <li><span>Angular Signals & OnPush CD</span> <div class="progress-bar"><div class="fill" style="width: 88%"></div></div></li>
+            <li><span>Micro-Frontend (Module Federation)</span> <div class="progress-bar"><div class="fill" style="width: 82%"></div></div></li>
+          </ul>
+        </div>
+
+        <div class="skill-category glass-panel">
+          <div class="skill-cat-header">
+            <i class="fa-brands fa-node-js skill-icon"></i>
+            <h3>Backend & Microservices</h3>
+          </div>
+          <ul class="skill-list">
+            <li><span>Node.js / Express</span> <div class="progress-bar"><div class="fill" style="width: 85%"></div></div></li>
+            <li><span>REST APIs & GraphQL</span> <div class="progress-bar"><div class="fill" style="width: 88%"></div></div></li>
+            <li><span>Python / Shell Scripting</span> <div class="progress-bar"><div class="fill" style="width: 80%"></div></div></li>
+            <li><span>Java Spring Boot</span> <div class="progress-bar"><div class="fill" style="width: 75%"></div></div></li>
+            <li><span>PostgreSQL / MongoDB / MySQL</span> <div class="progress-bar"><div class="fill" style="width: 80%"></div></div></li>
+          </ul>
+        </div>
+
+        <div class="skill-category glass-panel">
+          <div class="skill-cat-header">
+            <i class="fa-brands fa-aws skill-icon"></i>
+            <h3>Cloud, DevOps & Tools</h3>
+          </div>
+          <ul class="skill-list">
+            <li><span>AWS (EC2, S3, Lambda)</span> <div class="progress-bar"><div class="fill" style="width: 80%"></div></div></li>
+            <li><span>GitLab CI/CD Automation</span> <div class="progress-bar"><div class="fill" style="width: 85%"></div></div></li>
+            <li><span>Docker & Keycloak (SSO)</span> <div class="progress-bar"><div class="fill" style="width: 82%"></div></div></li>
+            <li><span>Zabbix & Netbox Integration</span> <div class="progress-bar"><div class="fill" style="width: 85%"></div></div></li>
+            <li><span>Jira / Agile Leadership</span> <div class="progress-bar"><div class="fill" style="width: 90%"></div></div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Timeline -->
+  <section id="experience" class="section experience-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">CAREER JOURNEY</span>
+        <h2 class="section-title">Professional Experience</h2>
+      </div>
+
+      <div class="timeline">
+        
+        <!-- Experience Item 1 -->
+        <div class="timeline-item glass-panel">
+          <div class="timeline-meta">
+            <span class="timeline-role">Senior Software Engineer</span>
+            <span class="timeline-company"><i class="fa-solid fa-building"></i> Tata Communications Ltd.</span>
+            <span class="timeline-date"><i class="fa-solid fa-calendar"></i> May 2022 – Present | Chennai, India</span>
+          </div>
+          <div class="timeline-content">
+            <ul>
+              <li>Architected and shipped <strong>10+ enterprise network portals</strong> using Angular (OnPush CD, reactive forms, lazy loading), serving 500+ global enterprise clients.</li>
+              <li>Engineered complex RxJS data streams (`switchMap`, `forkJoin`, `BehaviorSubject`) and HTTP interceptors for JWT token refresh, caching, and resilient global error handling.</li>
+              <li>Cut initial load times by <strong>~25%</strong> through lazy-loaded feature modules, trackBy directives, and virtual scrolling (`@angular/cdk/scrolling`).</li>
+              <li>Automated CI/CD build pipelines in GitLab cutting deployment cycle times by <strong>15%</strong>; integrated Keycloak SSO and APISIX API Gateway.</li>
+              <li>Led sprint planning and retrospectives in JIRA for a squad of <strong>6+ engineers</strong>.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Experience Item 2 -->
+        <div class="timeline-item glass-panel">
+          <div class="timeline-meta">
+            <span class="timeline-role">Software Engineer</span>
+            <span class="timeline-company"><i class="fa-solid fa-building"></i> HCLTech</span>
+            <span class="timeline-date"><i class="fa-solid fa-calendar"></i> Aug 2021 – Feb 2022 | Chennai, India</span>
+          </div>
+          <div class="timeline-content">
+            <ul>
+              <li>Built and tested structured REST API endpoints using Java Spring Boot following layered architecture best practices.</li>
+              <li>Authored backend unit test plans, debugging scripts, and QA workflows to ensure reliable API delivery.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Experience Item 3 -->
+        <div class="timeline-item glass-panel">
+          <div class="timeline-meta">
+            <span class="timeline-role">Web Developer Intern</span>
+            <span class="timeline-company"><i class="fa-solid fa-building"></i> Usis Technologies</span>
+            <span class="timeline-date"><i class="fa-solid fa-calendar"></i> Sep 2019 – Jul 2021 | Coimbatore, India</span>
+          </div>
+          <div class="timeline-content">
+            <ul>
+              <li>Developed core CRM modules in PHP and Laravel, driving a 20% increase in internal team productivity.</li>
+              <li>Built and deployed cross-platform iOS mobile apps using Apache Cordova integrated with PHP RESTful backend APIs.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="contact-card glass-panel">
+        <div class="contact-header">
+          <h2>Let's Build Exceptional Enterprise Systems</h2>
+          <p>Open for Senior Angular, Full-Stack, and Frontend Architecture roles.</p>
+        </div>
+
+        <div class="contact-details">
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope contact-icon"></i>
+            <div>
+              <span class="contact-label">Email</span>
+              <a href="mailto:rajeshkannan0129@gmail.com" class="contact-val">rajeshkannan0129@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-phone contact-icon"></i>
+            <div>
+              <span class="contact-label">Phone</span>
+              <span class="contact-val">+91 8072493148</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fa-brands fa-linkedin contact-icon"></i>
+            <div>
+              <span class="contact-label">LinkedIn</span>
+              <a href="https://linkedin.com/in/rajeshkannan-6bb005209" target="_blank" rel="noopener" class="contact-val">linkedin.com/in/rajeshkannan-6bb005209</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-actions">
+          <a href="mailto:rajeshkannan0129@gmail.com" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Send Email Direct</a>
+          <button class="btn btn-secondary" onclick="alert('Resume download initiated.')"><i class="fa-solid fa-download"></i> Download PDF Resume</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Rajesh Kannan. Built with Vanilla Web Standards & Modern Design System.</p>
+      <div class="footer-links">
+        <a href="#hero">Back to Top <i class="fa-solid fa-arrow-up"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modals for Case Studies -->
+  <div id="modal-sdn" class="modal">
+    <div class="modal-content glass-panel">
+      <span class="close-modal">&times;</span>
+      <h2>Case Study: Ethernet SR-EVPN SDN Controller</h2>
+      <p class="modal-subtitle">Enterprise SD-WAN Path Computation & Circuit Orchestration</p>
+      <hr>
+      <div class="modal-body">
+        <h4>Problem Statement</h4>
+        <p>Enterprise network circuit turn-up across SD-WAN endpoints previously required tedious manual router CLI configuration, resulting in high provisioning lead times (2-3 days) and risk of misconfiguration.</p>
+        
+        <h4>Technical Solution</h4>
+        <p>Engineered a high-responsiveness Angular front-end rendering dynamic network topologies using RxJS data pipelines (`switchMap`, `forkJoin`). Integrated directly with Node.js microservices to compute optimal path parameters and execute automated circuit turn-up.</p>
+        
+        <h4>Key Results</h4>
+        <ul>
+          <li><strong>40% reduction</strong> in manual network engineering effort.</li>
+          <li>Turned up circuits in minutes rather than days.</li>
+          <li>Enforced OAuth2 / Keycloak token security via HTTP interceptors.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-mcn" class="modal">
+    <div class="modal-content glass-panel">
+      <span class="close-modal">&times;</span>
+      <h2>Case Study: IZO Multi-Cloud Network (MCN) Portal</h2>
+      <p class="modal-subtitle">Unified Oversight across AWS, Azure, & Heterogeneous Cloud Circuits</p>
+      <hr>
+      <div class="modal-body">
+        <h4>Problem Statement</h4>
+        <p>NOC operations teams lacked a single pane of glass to monitor multi-cloud connection metrics, requiring context-switching across separate AWS, GCP, and Azure consoles.</p>
+        
+        <h4>Technical Solution</h4>
+        <p>Delivered an integrated Angular management dashboard backed by AWS (EC2, S3) Node.js microservices. Integrated APISIX API Gateway and Keycloak SSO for seamless multi-tenant authentication.</p>
+        
+        <h4>Key Results</h4>
+        <ul>
+          <li><strong>30% decrease</strong> in manual cloud network intervention.</li>
+          <li>Real-time connection telemetry across enterprise global links.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-maas" class="modal">
+    <div class="modal-content glass-panel">
+      <span class="close-modal">&times;</span>
+      <h2>Case Study: Monitoring as a Service (MaaS)</h2>
+      <p class="modal-subtitle">Real-Time Telemetry & Fault Detection Dashboard</p>
+      <hr>
+      <div class="modal-body">
+        <h4>Problem Statement</h4>
+        <p>High Mean Time to Detection (MTTD) for critical faults in device inventories containing over 10,000 active network elements.</p>
+        
+        <h4>Technical Solution</h4>
+        <p>Architected real-time dashboards utilizing Angular OnPush Change Detection, virtual scrolling (`cdk-virtual-scroll-viewport`), and live Zabbix monitoring API feeds.</p>
+        
+        <h4>Key Results</h4>
+        <ul>
+          <li>Sub-60fps smooth table scrolling for 10k+ rows.</li>
+          <li>Instant fault notification reducing MTTD for critical enterprise outages.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-bod" class="modal">
+    <div class="modal-content glass-panel">
+      <span class="close-modal">&times;</span>
+      <h2>Case Study: ILL Bandwidth on Demand (BOD)</h2>
+      <p class="modal-subtitle">Self-Service Dynamic Capacity Scaling</p>
+      <hr>
+      <div class="modal-body">
+        <h4>Problem Statement</h4>
+        <p>Customers requiring temporary bandwidth scaling on leased lines had to log manual support tickets, causing delays during peak traffic demands.</p>
+        
+        <h4>Technical Solution</h4>
+        <p>Built a modern self-service UI allowing customers to scale line capacity dynamically on-demand, powered by Python and Node.js backend orchestration workflows.</p>
+        
+        <h4>Key Results</h4>
+        <ul>
+          <li>Zero-ticketing automated bandwidth adjustments.</li>
+          <li>Enhanced enterprise customer satisfaction & revenue expansion.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
