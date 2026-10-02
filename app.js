@@ -1,76 +1,23 @@
-// Interactive JavaScript logic for Rajesh Kannan Portfolio
-
 document.addEventListener('DOMContentLoaded', () => {
-  // Modal Handler
-  const modalTriggers = document.querySelectorAll('.open-modal');
-  const closeBtns = document.querySelectorAll('.close-modal');
-  const modals = document.querySelectorAll('.modal');
+  const revealTargets = document.querySelectorAll('.work-card, .capability-grid > div, .journey-item');
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  modalTriggers.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      const modalId = btn.getAttribute('data-modal');
-      const targetModal = document.getElementById(modalId);
-      if (targetModal) {
-        targetModal.classList.add('active');
-        document.body.style.overflow = 'hidden';
-      }
+  if (!reduceMotion && 'IntersectionObserver' in window) {
+    revealTargets.forEach((element) => {
+      element.style.opacity = '0';
+      element.style.transform = 'translateY(18px)';
+      element.style.transition = 'opacity .6s ease, transform .6s ease';
     });
-  });
 
-  closeBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      modals.forEach(m => m.classList.remove('active'));
-      document.body.style.overflow = 'auto';
-    });
-  });
+    const observer = new IntersectionObserver((entries, observerInstance) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+        observerInstance.unobserve(entry.target);
+      });
+    }, { threshold: 0.12 });
 
-  modals.forEach(modal => {
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) {
-        modal.classList.remove('active');
-        document.body.style.overflow = 'auto';
-      }
-    });
-  });
-
-  // Animated Metrics Counter
-  const metrics = document.querySelectorAll('.metric-number');
-  let animated = false;
-
-  const animateMetrics = () => {
-    metrics.forEach(metric => {
-      const targetStr = metric.innerText;
-      const target = parseInt(metric.getAttribute('data-target') || targetStr);
-      let count = 0;
-      const step = Math.ceil(target / 40);
-
-      const updateCount = () => {
-        count += step;
-        if (count >= target) {
-          metric.innerText = targetStr; // Keep original formatting e.g. "10+"
-        } else {
-          metric.innerText = count + (targetStr.includes('+') ? '+' : targetStr.includes('%') ? '%' : '');
-          setTimeout(updateCount, 30);
-        }
-      };
-
-      updateCount();
-    });
-  };
-
-  // Intersection Observer for Metrics
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting && !animated) {
-        animateMetrics();
-        animated = true;
-      }
-    });
-  }, { threshold: 0.5 });
-
-  const metricsBanner = document.querySelector('.hero-metrics');
-  if (metricsBanner) {
-    observer.observe(metricsBanner);
+    revealTargets.forEach((element) => observer.observe(element));
   }
 });
